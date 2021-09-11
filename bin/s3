@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'awry'
+require 'awry/s3'
+Awry::S3.start(ARGV)
