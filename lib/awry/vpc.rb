@@ -69,6 +69,8 @@ module Awry
       end
     rescue Aws::EC2::Errors::DependencyViolation => e
       error(e.message)
+    rescue Aws::EC2::Errors::InvalidVpcIDNotFound => e
+      error(e.message)
     end
 
   end

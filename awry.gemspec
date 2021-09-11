@@ -38,4 +38,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'aws-sdk-s3'
   spec.add_dependency 'aws-sdk-secretsmanager'
   spec.add_dependency 'aws-sdk-ssm'
+  spec.add_dependency('thor')
 end
