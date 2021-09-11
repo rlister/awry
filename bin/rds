@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'awry'
+require 'awry/rds'
+Awry::Rds.start(ARGV)

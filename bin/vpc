@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'awry'
+require 'awry/vpc'
+Awry::Vpc.start(ARGV)

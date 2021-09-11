@@ -29,5 +29,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
+
+  spec.add_dependency 'aws-sdk-cloudformation'
+  spec.add_dependency 'aws-sdk-ec2'
+  spec.add_dependency 'aws-sdk-rds'
   spec.add_dependency 'aws-sdk-s3'
+  spec.add_dependency 'aws-sdk-secretsmanager'
+  spec.add_dependency 'aws-sdk-ssm'
 end

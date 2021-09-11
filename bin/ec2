@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'awry'
+require 'awry/ec2'
+Awry::Ec2.start(ARGV)
