@@ -65,6 +65,8 @@ module Awry
       end
     rescue Aws::S3::Errors::BucketNotEmpty => e
       error(e.message)
+    rescue Aws::S3::Errors::NoSuchBucket => e
+      warn(e.message)
     end
 
     desc 'policy BUCKET', 'get bucket policy'
